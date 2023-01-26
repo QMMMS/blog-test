@@ -22,7 +22,7 @@ title: QMMMS's Blog
 email: 1595168717@qq.com
 description: >
   专注于美
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog-test" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: QMMMS
 github_username:  QMMMS
