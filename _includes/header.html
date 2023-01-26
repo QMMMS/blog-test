@@ -1,0 +1,23 @@
+<h3 style="color: {{ include.color }};">{{ site.title }}</h3>
+
+
+{% for post in site.posts %}
+  <li><a style="{% if page.url == post.url %}color: red;{% endif %}" href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+
+<br>
+
+{% for person in site.data.people %}
+  {{ person.name }}, {{ person.ocupation }} <br>
+{% endfor %}
+
+<br>
+
+{% if page.title == "Welcome to Jekyll!" or page.title == "...."%}
+  <strong>嘿！这是个欢迎界面！</strong>
+{% elsif page.title == "Jekyll与GitHub pages建站" %}
+  <strong>嘿！这是个教程页面！</strong>
+{% else %}
+  <strong>普通页面</strong>
+{% endif %}
+<hr>
